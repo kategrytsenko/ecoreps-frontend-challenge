@@ -1,0 +1,7 @@
+<div *ngFor="let student of data">
+  Name: {{student.name}}
+  E-Mail: {{student.mail}}
+  Tasks incomplete <ul> 
+    <li *ngFor="let task of student.incompleteTasks"><input type="checkbox"> {{task.name}}</li>
+  </ul>
+</div>

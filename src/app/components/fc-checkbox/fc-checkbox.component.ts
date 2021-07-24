@@ -9,7 +9,6 @@ export class FcCheckboxComponent implements OnInit {
   @Output() onCheck: EventEmitter<boolean> = new EventEmitter();
 
   @Input() label!: string;
-  @Input() checked!: boolean;
 
   constructor() { }
 

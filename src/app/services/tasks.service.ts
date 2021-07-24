@@ -8,11 +8,6 @@ export class TasksService {
 
   constructor() { }
 
-  // TODO: do we need this?
-  getTickedTasks (student: Student) {
-    return localStorage.getItem(`${student.name} completedTasks:`);
-  }
-
   storeTickedTasks (student: Student) {
     localStorage.setItem(`${student.name} completedTasks:`, JSON.stringify(student.completedTasks));
   }

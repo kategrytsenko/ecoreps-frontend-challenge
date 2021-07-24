@@ -1,5 +1,6 @@
 <label class="fc-checkbox">
   {{ label }}
-  <input type="checkbox" checked="checked">
+  <input type="checkbox"
+         (change)="onCheckboxChanged($event)">
   <span class="fc-checkbox__checkmark"></span>
 </label>

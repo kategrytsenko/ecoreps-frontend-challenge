@@ -15,11 +15,9 @@
   </div>
   <div class="student-card__content">
     <ul class="student-card__tasks-list">
-      <li *ngFor="let task of student.incompleteTasks">
-<!--        <input type="checkbox">{{task.name}}-->
-        <app-fc-checkbox [label]="task.name"></app-fc-checkbox>
+      <li *ngFor="let task of studentTasks">
+        <app-fc-checkbox [label]="task.name" [checked]="task.done" (onCheck)="toggleTask($event, task)"></app-fc-checkbox>
       </li>
     </ul>
-
   </div>
 </div>

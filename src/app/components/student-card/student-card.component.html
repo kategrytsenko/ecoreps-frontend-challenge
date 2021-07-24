@@ -1,0 +1,25 @@
+<div class="student-card">
+  <div class="student-card__header">
+    <div class="student-card__header-info">
+      <div class="student-card__header-avatar">
+        {{student.name}}
+      </div>
+      <div class="student-card__header-details">
+        <div>{{student.name}}</div>
+        <div>{{student.mail}}</div>
+      </div>
+    </div>
+    <div class="student-card__close">
+      <fa-icon [icon]="faTimesCircle"></fa-icon>
+    </div>
+  </div>
+  <div class="student-card__content">
+    <ul class="student-card__tasks-list">
+      <li *ngFor="let task of student.incompleteTasks">
+<!--        <input type="checkbox">{{task.name}}-->
+        <app-fc-checkbox [label]="task.name"></app-fc-checkbox>
+      </li>
+    </ul>
+
+  </div>
+</div>

@@ -15,5 +15,4 @@ export class AppComponent {
  constructor(dataProvider: DataproviderService){
    this.data = dataProvider.makeStudentData()
  }
-
 }

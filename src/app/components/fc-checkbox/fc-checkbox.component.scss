@@ -1,4 +1,5 @@
-/* The container */
+@import "../../styles/shared";
+
 .fc-checkbox {
   display: block;
   position: relative;
@@ -26,7 +27,7 @@
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    border: 1px solid #484848;
+    border: 1px solid $border-color;
 
     &:after {
       content: "";
@@ -36,7 +37,7 @@
       top: 5px;
       width: 5px;
       height: 15px;
-      border: 1px solid #484848;
+      border: 1px solid $border-color;
       border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -46,11 +47,11 @@
 }
 
 .fc-checkbox:hover input ~ .fc-checkbox__checkmark {
-  background-color: #cccccc;
+  background-color: $light-grey;
 }
 
 .fc-checkbox input:checked ~ .fc-checkbox__checkmark {
-  border: 1px solid #484848;
+  border: 1px solid $border-color;
 }
 
 .fc-checkbox input:checked ~ .fc-checkbox__checkmark:after {

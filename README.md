@@ -78,3 +78,5 @@ EFC-1: Page layout (Create student card component, add styles)
 EFC-2: Tasks managing (Check and uncheck task functionality, Local storage saving) 
 
 EFC-3: README
+
+EFC-4: Tasks managing (Get tasks from storage)

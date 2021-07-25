@@ -8,8 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class FcCheckboxComponent {
   @Output() onCheck: EventEmitter<boolean> = new EventEmitter();
 
-  @Input() label!: string;
-  @Input() checked!: boolean;
+  @Input() label?: string;
+  @Input() checked?: boolean;
 
   constructor () {
   }

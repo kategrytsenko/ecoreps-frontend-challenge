@@ -2,11 +2,11 @@
   <div class="student-card__header">
     <div class="student-card__header-info">
       <div class="student-card__header-avatar">
-        {{student.name}}
+        {{student?.name}}
       </div>
       <div class="student-card__header-details">
-        <div>{{student.name}}</div>
-        <div>{{student.mail}}</div>
+        <div>{{student?.name}}</div>
+        <div>{{student?.mail}}</div>
       </div>
     </div>
     <div class="student-card__close">
@@ -16,7 +16,7 @@
   <div class="student-card__content">
     <ul class="student-card__tasks-list">
       <li *ngFor="let task of studentTasks">
-        <app-fc-checkbox [checked]="task.done" [label]="task.name"
+        <app-fc-checkbox [checked]="task?.done" [label]="task?.name"
                          (onCheck)="toggleTask($event, task)"></app-fc-checkbox>
       </li>
     </ul>

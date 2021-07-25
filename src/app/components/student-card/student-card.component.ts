@@ -21,7 +21,7 @@ export class StudentCardComponent implements OnInit {
   }
 
   ngOnInit (): void {
-    this.studentTasks = concat(this.student.completedTasks, this.student.incompleteTasks);
+    this.studentTasks = concat(this.student?.completedTasks, this.student?.incompleteTasks);
   }
 
   toggleTask (checked: boolean, task: Task) {

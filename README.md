@@ -80,3 +80,5 @@ EFC-2: Tasks managing (Check and uncheck task functionality, Local storage savin
 EFC-3: README
 
 EFC-4: Tasks managing (Get tasks from storage)
+
+EFC-5: Unit tests
